@@ -10,7 +10,7 @@ class TestTls {
   public static void main(String[] args) {
     try {
       String contexts = String.join(", ", SSLContext.getDefault().getSupportedSSLParameters().getProtocols());
-      System.out.println("Supported Contexts:" + contexts);
+      System.out.println("Supported Contexts: " + contexts);
     } catch (NoSuchAlgorithmException e) {
       System.out.println("Error listing available contexts: " + e.getMessage());
     }
@@ -29,7 +29,7 @@ class TestTls {
       System.out
           .println("Failed to connect to OpenTok, please check your system and upgrade your environment as needed.");
     } catch (IOException e) {
-      System.out.println("Unknown error talking to OpenTok, please try again later.");
+      System.out.println("Unknown error talking to OpenTok, please try again later: " + e.getMessage());
     }
   }
 }
