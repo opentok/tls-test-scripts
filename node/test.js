@@ -1,7 +1,7 @@
 var https = require("https");
 var req = https.request(
   {
-    host: "preview.opentok.com",
+    host: "api.opentok.com",
     port: "443",
     path: "tls-check.json",
     method: "GET",

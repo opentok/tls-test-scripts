@@ -8,7 +8,7 @@ class TestTls {
   public static void main(String[] args) {
     URL url = null;
     try {
-      url = new URL("https://preview.opentok.com/tls-check.json");
+      url = new URL("https://api.opentok.com");
       HttpURLConnection connection = (HttpURLConnection) url.openConnection();
       connection.setRequestMethod("GET");
       connection.connect();

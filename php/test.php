@@ -2,7 +2,7 @@
 $curl = curl_init();
 curl_setopt_array($curl, array(
     CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'https://preview.opentok.com/tls-check.json',
+    CURLOPT_URL => 'https://api.opentok.com',
 ));
 $curlResponse = curl_exec($curl);
 if ($curlResponse === false && curl_errno($curl) === 35) {
